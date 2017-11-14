@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
-import { ExpresionesComponent } from './expresiones/expresiones.component';
-import { LocalComponent } from './local/local.component';
+import { HijoComponent } from './hijo/hijo.component';
+import { PadreComponent } from './padre/padre.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule
   ],
-  declarations: [BindingComponent, ExpresionesComponent, LocalComponent],
-  exports: [BindingComponent, ExpresionesComponent, LocalComponent]
+  declarations: [HijoComponent, PadreComponent],
+  exports: [ HijoComponent, PadreComponent]
 })
 export class MainModule { }

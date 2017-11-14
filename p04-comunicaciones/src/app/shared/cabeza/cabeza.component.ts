@@ -11,7 +11,7 @@ export class CabezaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.titulo = 'Curso de Angular - Ejemplo de Modulos';
+    this.titulo = 'Curso de Angular - Ejemplo de Comunicaciones';
   }
 
 }
