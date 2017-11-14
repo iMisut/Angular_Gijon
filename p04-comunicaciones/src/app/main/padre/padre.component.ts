@@ -8,9 +8,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
 
+  public nombre: string;
   constructor() { }
 
   ngOnInit() {
   }
 
+  respuestaAlHijo(nuevoNombre: string) {
+    this.nombre = nuevoNombre;
+  }
 }

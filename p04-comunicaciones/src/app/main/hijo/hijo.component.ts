@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -7,10 +7,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HijoComponent implements OnInit {
+  @Input() hijoNombre: string;
+  @Output() emitNo: EventEmitter<string> = new EventEmitter<string>();
 
+  public hijoNuevoNombre: string;
   constructor() { }
 
   ngOnInit() {
   }
 
+  btnNoMeGusta() {
+    this.emitNo.emit(this.hijoNuevoNombre);
+  }
 }

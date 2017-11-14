@@ -6,7 +6,22 @@
             Componente Hijo
           </div>
           <div class="card-body">
-              
+              Me llamo {{hijoNombre}}
+              <div class="form-group">
+                  <button 
+                    type="button" 
+                    class="btn-primary" 
+                    (click)="btnNoMeGusta()"
+                    >No me gusta</button>
+              </div>
+              <div class="form-group">
+                  <label for="hijoNuevoNombre">Prefiero llamarme:</label>
+                  <input type="text"
+                    class="form-control" 
+                    name="hijoNuevoNombre" 
+                    id="hijoNuevoNombre"
+                    [(ngModel)]="hijoNuevoNombre">
+                </div>
           </div>
           <div class="card-footer text-muted">
             Pie Hijo

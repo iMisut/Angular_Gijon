@@ -11,9 +11,11 @@
                 <input type="text"
                   class="form-control" 
                   name="nombre" 
-                  id="nombre">
+                  id="nombre"
+                  [(ngModel)]="nombre">
               </div>
-              <app-hijo></app-hijo>              
+              <app-hijo [hijoNombre]="nombre"
+              (emitNo)="respuestaAlHijo($event)"></app-hijo>              
         </div>
         <div class="card-footer text-muted">
           Pie Padre
